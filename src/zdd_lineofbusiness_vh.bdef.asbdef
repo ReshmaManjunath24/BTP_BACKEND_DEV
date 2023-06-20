@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_lineofbusiness_vh unique;
+//strict ( 1 );
+
+define behavior for zdd_lineofbusiness_vh //alias <alias_name>
+persistent table ZTAB_LINEOFBUSNS
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

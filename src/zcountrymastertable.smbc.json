@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain Countries",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZUI_COUNTRYMASTERTABLE_O4",
+    "serviceName": "ZUI_COUNTRYMASTERTABLE_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "CountryMasterTabAll",
+    "name": "Country master table",
+    "configurationGroup": "",
+    "skipRootEntity": true
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "CountryMasterTabAll",
+        "variantManagement": "control"
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "CountryMasterTable",
+        "tableType": "gridTable",
+        "creationModeName": "creationRow",
+        "rowCountMode": "auto"
+      }
+    ]
+  }
+}

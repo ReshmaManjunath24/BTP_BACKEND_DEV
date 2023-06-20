@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_cr_currency_vh unique;
+//strict ( 1 );
+
+define behavior for zdd_cr_currency_vh //alias <alias_name>
+persistent table ztab_currency
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

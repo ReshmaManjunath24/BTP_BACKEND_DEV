@@ -1,0 +1,9 @@
+projection;
+//strict ( 2 );
+
+define behavior for ZPRJ_CASH_CUST //alias <alias_name>
+use etag{
+  use create;
+  use update;
+  use delete;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defnition for Currency Value Help'
+define service ZSD_CR_CURRENCY_VH {
+  expose zdd_cr_currency_vh;
+}

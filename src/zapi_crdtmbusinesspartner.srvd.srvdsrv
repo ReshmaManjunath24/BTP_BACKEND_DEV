@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZAPI_CRDTMBUSINESSPARTNER'
+@OData.schema.name: 'cds_api_crdtmbusinesspartner'
+define service ZAPI_CRDTMBUSINESSPARTNER {
+ expose ZCREDITMGMTBUSINESSPARTNER; 
+ expose ZCREDITMANAGEMENTACCOUNT; 
+ } 

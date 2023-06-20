@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_WF_CORE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Workflow::Getting an approver&apos;s list</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WF_CORE</CLSNAME>
+     <CMPNAME>CREATE_BY_CUSTOMER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>If we know a customer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WF_CORE</CLSNAME>
+     <CMPNAME>CREATE_BY_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>If we have properties but don&apos;t know a particular customer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WF_CORE</CLSNAME>
+     <CMPNAME>GATHER_APPROVERS_LIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Make a list of email addresses by approvers sequence</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WF_CORE</CLSNAME>
+     <CMPNAME>GET_APPROVERS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Make a list of email addresses</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WF_CORE</CLSNAME>
+     <CMPNAME>SELECT_BUSINESSUNIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Just select a business unit record</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WF_CORE</CLSNAME>
+     <CMPNAME>SELECT_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Properties of customer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WF_CORE</CLSNAME>
+     <CMPNAME>SELECT_ROLETYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Role type is an approvers sequence</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

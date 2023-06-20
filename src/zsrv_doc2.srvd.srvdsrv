@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition for Doc 2'
+define service Zsrv_doc2 {
+  expose zdd_upload2;
+}

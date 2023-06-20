@@ -1,0 +1,34 @@
+managed implementation in class zbp_dd_rule_engine unique;
+//strict;
+
+define behavior for Zdd_rule_engine alias RuleEngine
+persistent table ZTAB_RULE_ENGINE
+lock master
+//etag master rule_id//late numbering
+//authorization master ( instance )
+//etag master <field_name>
+{
+
+
+field(readonly,numbering : managed)rule_id;
+//field (readonly : update);
+field(readonly)created_by,created_date;
+
+field(mandatory:create)
+company_code,
+customer_group,
+customer_type,
+zbusiness_partner_id,
+//field_name,
+process;
+//layout;
+
+
+//mapping for ZTAB_RULE_ENGINE
+//{
+//rule_id = rule_id;
+//}
+  create;
+  update;
+  delete;
+}

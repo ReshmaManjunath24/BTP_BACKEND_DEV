@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defnition for Rule engine'
+define service ZRULE_ENGINE {
+  expose Zdd_rule_engine;
+}

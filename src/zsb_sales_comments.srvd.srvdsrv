@@ -1,0 +1,5 @@
+@EndUserText.label: 'Sales Area and Comments'
+define service ZSB_SALES_COMMENTS {
+  expose ZDD_SALES_AREA;
+  expose ZDD_COMMENTS;
+}

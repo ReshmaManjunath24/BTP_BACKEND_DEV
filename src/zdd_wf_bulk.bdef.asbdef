@@ -1,0 +1,11 @@
+unmanaged implementation in class zbp_dd_wf_bulk unique;
+strict ( 1 );
+
+define behavior for ZDD_WF_BULK alias bulk
+lock master
+authorization master ( instance )
+{
+  action Save_File result [1] $self;
+  action Create_Customers result [1] $self;
+  action Change_Customers result [1] $self;
+}

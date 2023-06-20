@@ -1,0 +1,18 @@
+managed implementation in class zbp_dd_cash_cust unique;
+//strict ( 2 );
+
+define behavior for ZDD_CASH_CUST //alias <alias_name>
+persistent table ZTAB_CASH_CUST
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+
+field ( readonly, numbering : managed )zcustomer_num;
+
+
+
+  create;
+  update;
+  delete;
+}

@@ -1,0 +1,15 @@
+managed implementation in class zbp_dd_trade_cust unique;
+//strict ( 2 );
+
+define behavior for ZDD_TRADE_CUST //alias <alias_name>
+persistent table ZTAB_TRADE_CUST
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+
+field ( readonly, numbering : managed )zcustomer_num;
+  create;
+  update;
+  delete;
+}

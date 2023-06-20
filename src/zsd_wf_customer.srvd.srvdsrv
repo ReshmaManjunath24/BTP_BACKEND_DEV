@@ -1,0 +1,7 @@
+@EndUserText.label: 'Workflow: Customer'
+define service ZSD_WF_CUSTOMER {
+  expose ZDD_WF_CUSTOMER as customer;
+  expose ZDD_WF_CUSTOMER_APPROVERS as approvers;
+  expose ZDD_WF_CUSTOMER_CREAT_CUSTOMER as create_customer;
+  expose ZDD_WF_CUSTOMER_CHANG_CUSTOMER as change_customer;
+}

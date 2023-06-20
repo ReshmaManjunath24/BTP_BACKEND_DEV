@@ -1,0 +1,4 @@
+@EndUserText.label: 'Vertical master data service definition'
+define service ZSD_VERTICAL {
+  expose ZDD_Vertical_VH;
+}

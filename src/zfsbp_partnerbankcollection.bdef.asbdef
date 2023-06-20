@@ -1,0 +1,7 @@
+ implementation abstract;
+ define behavior for ZFSBP_PARTNERBANKCOLLECTION
+  {
+  create;
+ update;
+ delete;
+ }

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defnition for Country Value Help'
+define service ZSD_COUNTRY_VH {
+  expose zdd_country_vh;
+}

@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_exp_pytterm_vh unique;
+//strict ( 1 );
+
+define behavior for ZDD_EXP_PYTTERM_VH //alias <alias_name>
+persistent table ZTAB_EXPORTPYMNT
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

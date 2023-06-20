@@ -1,0 +1,5 @@
+@EndUserText.label: 'Workflow: Credit Limit Request'
+define service ZSD_WF_CLREQ {
+  expose ZDD_WF_CLREQ as clreq;
+  expose ZDD_WF_APPROVERS as approvers;
+}

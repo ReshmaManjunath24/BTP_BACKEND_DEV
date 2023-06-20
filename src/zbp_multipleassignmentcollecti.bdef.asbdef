@@ -1,0 +1,7 @@
+ implementation abstract;
+ define behavior for ZBP_MULTIPLEASSIGNMENTCOLLECTI
+  {
+  create;
+ update;
+ delete;
+ }

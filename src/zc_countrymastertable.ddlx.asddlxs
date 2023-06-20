@@ -1,0 +1,66 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'CountryMasterTable', 
+    typeNamePlural: 'CountryMasterTables', 
+    title: {
+      type: #STANDARD, 
+      label: 'Country master table', 
+      value: 'Country'
+    }
+  }
+}
+annotate view ZC_CountryMasterTable with
+{
+  @UI.identification: [ {
+    position: 1 , 
+    label: 'Country'
+  } ]
+  @UI.lineItem: [ {
+    position: 1 , 
+    label: 'Country'
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_CountryMasterTable', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Country master table', 
+    position: 1 
+  } ]
+  Country;
+  
+  @UI.identification: [ {
+    position: 2 , 
+    label: 'Code'
+  } ]
+  @UI.lineItem: [ {
+    position: 2 , 
+    label: 'Code'
+  } ]
+  Code;
+  
+  @UI.identification: [ {
+    position: 3 , 
+    label: 'Rating'
+  } ]
+  @UI.lineItem: [ {
+    position: 3 , 
+    label: 'Rating'
+  } ]
+  Rating;
+  
+  @UI.identification: [ {
+    position: 4 , 
+    label: 'Isactive'
+  } ]
+  @UI.lineItem: [ {
+    position: 4 , 
+    label: 'Isactive'
+  } ]
+  Isactive;
+  
+  @UI.identification: [ {
+    position: 5 
+  } ]
+  LastChangedAt;
+}

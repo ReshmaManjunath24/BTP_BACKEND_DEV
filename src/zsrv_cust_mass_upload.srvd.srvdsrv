@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition for cust mass upload'
+define service Zsrv_cust_mass_upload {
+  expose zdd_cust_mass_upload_view;
+}

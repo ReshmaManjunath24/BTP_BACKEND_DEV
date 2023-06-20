@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_excel unique;
+strict ( 1 );
+
+define behavior for ZDD_EXCEL //alias <alias_name>
+persistent table ZTAB_CLAP1
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

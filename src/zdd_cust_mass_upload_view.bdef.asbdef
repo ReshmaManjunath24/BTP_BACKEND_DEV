@@ -1,0 +1,15 @@
+managed implementation in class zbp_dd_cust_mass_upload_view unique;
+//strict ( 1 );
+
+define behavior for zdd_cust_mass_upload_view //alias <alias_name>
+persistent table ZCUST_MASS_UPLD
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+//field (readonly, numbering : managed) ;
+field(readonly)create_date;
+  create;
+  update;
+  delete;
+}

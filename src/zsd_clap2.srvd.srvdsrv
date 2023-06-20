@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defnition for IFFCO-CLAP'
+define service ZSD_CLAP2 {
+  expose ZDD_CLAP_VIEW;
+}

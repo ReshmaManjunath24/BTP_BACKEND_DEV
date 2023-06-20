@@ -1,0 +1,11 @@
+@EndUserText.label: 'Service Defnition for Rule Engine'
+define service ZSD_RULE_ENGINE {
+  expose Zdd_rule_engine;
+  expose zdd_rule_fields;
+  expose ZDD_CUSTOMER;
+  expose ZDD_GET_LAYout_Master;
+  expose ZDD_LAYout_Master;
+  expose ZDD_RULE_UPDATE;
+  expose ZDD_RULE_UPDATE_FIELDS;
+  expose ZDD_GET_RULE_Details;
+}

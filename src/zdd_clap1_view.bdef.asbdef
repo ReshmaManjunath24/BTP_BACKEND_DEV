@@ -1,0 +1,45 @@
+managed implementation in class zbp_dd_clap1_view unique;
+//strict ( 1 );
+
+define behavior for ZDD_CLAP1_VIEW //alias <alias_name>
+persistent table ZTAB_CLAP1
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+field(readonly , numbering : managed)zcustomer_num;
+//field(readonly : update)zupdated_by,zupdated_date;
+
+  create;
+  update;
+  delete;
+  association _zdd_comments { create; }
+  association _zdd_sale { create; }
+
+// association new line added //
+  //association _sale_area;
+}
+
+define behavior for ZDD_COMMENT2 //alias <alias_name>
+persistent table ZTAB_COMMENT
+lock dependent by _zdd_clap1
+//authorization dependent by _zdd_clap1
+//etag master <field_name>
+{
+  update ;
+  delete;
+  field ( readonly ) zcustomer_num, zsales_orgnization;
+  association _zdd_clap1;
+}
+
+define behavior for ZDD_SALE_AREA1 //alias <alias_name>
+persistent table ZTAB_SALE_AREA
+lock dependent by _zdd_clap
+//authorization dependent by _zdd_clap
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) zcustomer_num, zsales_orgnization;
+  association _zdd_clap;
+}

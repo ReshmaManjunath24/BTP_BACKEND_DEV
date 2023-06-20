@@ -1,0 +1,14 @@
+managed implementation in class zbp_dd_req_history unique;
+//strict ( 1 );
+
+define behavior for ZDD_REQ_HISTORY
+persistent table ztab_req_history
+lock master
+//authorization master ( instance )
+
+{
+
+  create;
+  update;
+  delete;
+}

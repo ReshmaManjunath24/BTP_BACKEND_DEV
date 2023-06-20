@@ -1,0 +1,7 @@
+ implementation abstract;
+ define behavior for ZBP_WORKPLACECOMMEMAILCOLLECTI
+  {
+  create;
+ update;
+ delete;
+ }

@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_country_vh unique;
+//strict ( 1 );
+
+define behavior for zdd_country_vh //alias <alias_name>
+persistent table ZTAB_COUNTRY
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

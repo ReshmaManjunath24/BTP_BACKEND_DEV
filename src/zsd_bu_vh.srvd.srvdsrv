@@ -1,0 +1,4 @@
+@EndUserText.label: 'Business Unit'
+define service ZSD_BU_VH {
+  expose ZPRJ_BU_VH;
+}

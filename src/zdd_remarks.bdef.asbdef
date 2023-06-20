@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_remarks unique;
+//strict ( 1 );
+
+define behavior for ZDD_REMARKS //alias <alias_name>
+persistent table ZTAB_REMARKS
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

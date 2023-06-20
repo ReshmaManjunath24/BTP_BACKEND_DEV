@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defnition for Line of Business Type Value Help'
+define service ZSD_LINEOFBUSINESSTYPE_VH {
+  expose zdd_lineofbusiness_vh;
+}

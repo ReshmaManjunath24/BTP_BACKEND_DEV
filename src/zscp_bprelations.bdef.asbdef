@@ -1,0 +1,7 @@
+ implementation abstract;
+ define behavior for ZSCP_BPRELATIONS
+  {
+  create;
+ update;
+ delete;
+ }

@@ -1,0 +1,10 @@
+unmanaged implementation in class zbp_dd_wf_customer unique;
+strict ( 1 );
+
+define behavior for ZDD_WF_CUSTOMER
+lock master
+authorization master ( instance )
+{
+  action Create_Customer result [1] $self;
+  action Change_Customer result [1] $self;
+}

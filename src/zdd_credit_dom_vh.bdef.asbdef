@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_credit_dom_vh unique;
+//strict ( 1 );
+
+define behavior for ZDD_CREDIT_DOM_VH //alias <alias_name>
+persistent table ZTAB_CRDT_DOMSTC
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

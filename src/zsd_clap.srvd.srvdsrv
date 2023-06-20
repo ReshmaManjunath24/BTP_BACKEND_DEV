@@ -1,0 +1,7 @@
+@EndUserText.label: 'Service Defnition for IFFCO-CLAP'
+define service ZSD_CLAP {
+  expose ZDD_CUSTOMER;
+  expose ZDD_CUST_COMMENT;
+  expose ZDD_CUST_SALESAREA;
+  expose ZDD_VIOLATION_RULE;
+}

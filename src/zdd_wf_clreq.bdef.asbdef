@@ -1,0 +1,9 @@
+unmanaged implementation in class zbp_dd_wf_clreq unique;
+strict ( 1 );
+
+define behavior for ZDD_WF_CLREQ //alias <alias_name>
+authorization master ( instance )
+lock master
+{
+   action transfer2S4;
+}

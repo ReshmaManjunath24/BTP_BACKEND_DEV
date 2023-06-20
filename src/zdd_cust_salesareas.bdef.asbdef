@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_cust_salesareas unique;
+//strict ( 1 );
+
+define behavior for ZDD_CUST_SALESAREAS //alias <alias_name>
+persistent table ztab_salesarea
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

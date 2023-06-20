@@ -1,0 +1,4 @@
+@EndUserText.label: 'REMARKS'
+define service ZSD_REMARKS {
+  expose ZDD_REMARKS;
+}

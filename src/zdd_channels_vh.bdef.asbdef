@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_channels_vh unique;
+//strict ( 1 );
+
+define behavior for ZDD_CHANNELS_VH //alias <alias_name>
+persistent table ztab_channels_vh
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

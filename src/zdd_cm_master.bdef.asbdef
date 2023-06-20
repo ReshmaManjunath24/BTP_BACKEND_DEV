@@ -1,0 +1,14 @@
+managed implementation in class zbp_dd_cm_master unique;
+//strict ( 1 );
+
+define behavior for ZDD_CM_MASTER //alias <alias_name>
+persistent table ztab_cm_master
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+field (readonly : update) division,distribution_channel,salesorganization;
+  create;
+  update;
+  delete;
+}

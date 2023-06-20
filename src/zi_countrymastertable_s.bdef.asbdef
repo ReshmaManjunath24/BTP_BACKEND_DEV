@@ -1,0 +1,61 @@
+managed with additional save implementation in class ZBP_I_COUNTRYMASTERTABLE_S unique;
+strict;
+with draft;
+
+define behavior for ZI_CountryMasterTable_S alias CountryMasterTabAll
+draft table ZTAB_COUNTRY_D_S
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master( global )
+
+{
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit;
+  draft action Activate;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  action ( features : instance ) SelectCustomizingTransptReq parameter D_SelectCustomizingTransptReqP result [1] $self;
+
+  association _CountryMasterTable { create ( features : instance ); with draft; }
+}
+
+define behavior for ZI_CountryMasterTable alias CountryMasterTable
+persistent table ZTAB_COUNTRY
+draft table ZTAB_COUNTRY_D
+etag master LocalLastChangedAt
+lock dependent by _CountryMasterTabAll
+authorization dependent by _CountryMasterTabAll
+
+{
+  field ( mandatory : create )
+   Country;
+
+  field ( readonly )
+   SingletonID,
+   LastChangedAt;
+
+  field ( readonly : update )
+   Country;
+
+
+  update( features : global );
+  delete( features : global );
+
+  mapping for ZTAB_COUNTRY
+  {
+    Country = COUNTRY;
+    Code = CODE;
+    Rating = RATING;
+    Isactive = ISACTIVE;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+  association _CountryMasterTabAll { with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; delete; }
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defnition for Vertical Value Help'
+define service ZSD_VERTICAL_VH {
+  expose ZDD_Vertical_VH;
+}

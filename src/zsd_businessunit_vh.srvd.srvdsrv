@@ -1,0 +1,4 @@
+@EndUserText.label: 'Value help for Business Unit'
+define service ZSD_BUSINESSUNIT_VH {
+  expose ZDD_BusinessUnit_VH;
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'DOCUMENT UPLOAD'
+define service ZSD_DOC_UPLOAD {
+  expose ZPR_DOC;
+  expose zdd_doc;
+}

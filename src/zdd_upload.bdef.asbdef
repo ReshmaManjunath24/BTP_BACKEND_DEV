@@ -1,0 +1,16 @@
+managed implementation in class zbp_dd_upload unique;
+
+define behavior for zdd_upload //alias <alias_name>
+persistent table ZTAB_DOC
+lock master
+authorization master ( instance )
+//etag master <field_name>
+
+{
+
+  create;
+  update;
+  delete;
+
+  field (readonly,numbering : managed)documentid;
+}

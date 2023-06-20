@@ -1,0 +1,25 @@
+projection;
+strict;
+use draft;
+
+define behavior for ZC_CountryMasterTable_S alias CountryMasterTabAll
+
+{
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+  use action SelectCustomizingTransptReq;
+
+  use association _CountryMasterTable { create; with draft; }
+}
+
+define behavior for ZC_CountryMasterTable alias CountryMasterTable
+
+{
+  use update;
+  use delete;
+
+  use association _CountryMasterTabAll { with draft; }
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition for upload table'
+define service Zsrv_upload {
+  expose zdd_upload;
+}

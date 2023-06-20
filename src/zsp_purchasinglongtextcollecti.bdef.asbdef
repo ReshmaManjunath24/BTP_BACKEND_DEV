@@ -1,0 +1,7 @@
+ implementation abstract;
+ define behavior for ZSP_PURCHASINGLONGTEXTCOLLECTI
+  {
+  create;
+ update;
+ delete;
+ }

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defnition for Payement Trems Value Help'
+define service ZSD_PAYMENTTERMS_VH {
+  expose zdd_paymentterm_vh;
+}

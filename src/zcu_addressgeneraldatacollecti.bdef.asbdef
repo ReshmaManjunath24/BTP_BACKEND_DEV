@@ -1,0 +1,7 @@
+ implementation abstract;
+ define behavior for ZCU_ADDRESSGENERALDATACOLLECTI
+  {
+  create;
+ update;
+ delete;
+ }

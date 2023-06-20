@@ -1,0 +1,22 @@
+managed implementation in class zbp_dd_rule_update_fields unique;
+
+
+define behavior for ZDD_RULE_UPDATE_FIELDS //alias <alias_name>
+persistent table ZTAB_UPDATE_RULE
+lock master
+//authorization master ( instance )
+//etag master rule_id
+//etag master <field_name>
+
+
+{
+
+////mapping for ZTAB_UPDATE_RULE
+////{
+////rule_id = rule_id;
+//
+//}
+  create;
+  update;
+  delete;
+}

@@ -1,0 +1,7 @@
+ implementation abstract;
+ define behavior for ZBP_COMMURICOLLECTION
+  {
+  create;
+ update;
+ delete;
+ }

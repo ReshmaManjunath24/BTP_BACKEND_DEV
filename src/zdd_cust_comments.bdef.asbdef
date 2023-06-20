@@ -1,0 +1,14 @@
+managed implementation in class zbp_dd_cust_comments unique;
+//strict ( 1 );
+
+define behavior for ZDD_CUST_COMMENTS //alias <alias_name>
+persistent table ZTAB_COMMENT
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+field (readonly)createdby,createdat;
+  create;
+  update;
+  delete;
+}

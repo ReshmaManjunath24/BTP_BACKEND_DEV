@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_legal_status_vh unique;
+//strict ( 1 );
+
+define behavior for ZDD_LEGAL_STATUS_VH //alias <alias_name>
+persistent table ZTAB_LEGALSTATUS
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defnition for Credit customer'
+define service ZSD_CREDIT_CUST {
+  expose ZPRJ_CREDIT_CUST;
+}

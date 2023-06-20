@@ -1,0 +1,4 @@
+define service ZUI_COUNTRYMASTERTABLE {
+  expose ZC_COUNTRYMASTERTABLE_S as CountryMasterTabAll;
+  expose ZC_COUNTRYMASTERTABLE as CountryMasterTable;
+}

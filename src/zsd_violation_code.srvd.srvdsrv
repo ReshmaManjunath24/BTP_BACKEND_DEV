@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for Violation Code'
+define service ZSD_VIOLATION_CODE {
+  expose ZDD_VIOLATION_RULE as Violation_Code;
+}

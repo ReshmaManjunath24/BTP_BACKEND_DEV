@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Sub Channel VH'
+define service ZSD_SUBCHANNEL_VH {
+  expose ZDD_SubChannel_VH;
+}

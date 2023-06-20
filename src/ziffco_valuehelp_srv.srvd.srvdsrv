@@ -1,0 +1,5 @@
+@EndUserText.label: 'ZIFFCO_VALUEHELP_SRV'
+@OData.schema.name: 'ZIFFCO_VALUEHELP_SRV'
+define service ZIFFCO_VALUEHELP_SRV {
+ expose ZMDGBUSINESSPARTNERIDSET; 
+ } 

@@ -1,0 +1,13 @@
+managed implementation in class zbp_dd_violation unique;
+//strict ( 1 );
+
+define behavior for ZDD_VIOLATION //alias <alias_name>
+persistent table ZTAB_VIOLATION
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

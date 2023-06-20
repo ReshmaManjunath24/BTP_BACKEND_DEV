@@ -1,0 +1,17 @@
+managed implementation in class zbp_dd_paymentterm_vh unique;
+//strict ( 1 );
+
+define behavior for zdd_paymentterm_vh //alias <alias_name>
+persistent table ZTAB_PAYMENTTERM
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+field (readonly : update)
+customertype,
+credittype,
+paymentterm;
+  create;
+  update;
+  delete;
+}

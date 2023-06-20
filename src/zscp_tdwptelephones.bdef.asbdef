@@ -1,0 +1,7 @@
+ implementation abstract;
+ define behavior for ZSCP_TDWPTELEPHONES
+  {
+  create;
+ update;
+ delete;
+ }

@@ -1,0 +1,6 @@
+ implementation abstract;
+ define behavior for ZSCP_INTVPERSONNAMES
+  {
+  create;
+ delete;
+ }

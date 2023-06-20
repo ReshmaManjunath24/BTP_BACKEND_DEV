@@ -1,0 +1,6 @@
+@EndUserText.label: 'Workflow: Bulk Data File'
+define service ZSD_WF_BULK {
+  expose ZDD_WF_BULK as bulk;
+  expose ZDD_WF_BULK_APPROVERS as approvers;
+  expose ZDD_WF_BULK_CHANGE_CUSTOMERS as change_customers;
+}
